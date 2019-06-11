@@ -20,14 +20,7 @@ export default class App extends Component {
                     <Switch>
                       <Route exact path='/' component={Products}/>
                       <Route exact path='/products/new' component={NewProduct}/>
-                      <Route excat path="/products/update/:id" render={(props) => {
-                        let id = props.location.pathname.replace('/products/update/','');
-                        return(
-                          <UpdateProduct
-                            id={id}
-                          />
-                        )
-                      }}/>
+                      <Route exact path='/products/update/:id' component={UpdateProduct}/>
                     </Switch>
                   </div>
               </React.Fragment>

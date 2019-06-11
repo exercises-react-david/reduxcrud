@@ -8,12 +8,12 @@
     {
       "id": 3,
       "nombre": "Pastel 4",
-      "precio": 30
+      "precio": "50"
     },
     {
+      "id": 4,
       "nombre": "Pastel de Zanahoria",
-      "precio": "45",
-      "id": 4
+      "precio": "45"
     },
     {
       "nombre": "Pastel de Chocolate",
