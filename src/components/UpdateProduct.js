@@ -20,7 +20,7 @@ class UpdateProduct extends Component {
 
     componentWillReceiveProps(nextProps,nextState){
         //console.log(nextProps);
-        const {nombre,precio,id} = nextProps.product;
+        const {nombre,precio} = nextProps.product;
 
         this.setState({
                 nombre,
@@ -92,4 +92,4 @@ const mapStateToProps = state =>({
     product: state.products1.product
 })
 
-export default connect(mapStateToProps,{getProduct,updateProduct}) (UpdateProduct);
+export default connect(mapStateToProps,{getProduct,updateProduct}) (UpdateProduct); 
